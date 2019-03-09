@@ -3,7 +3,7 @@ const client = new Discord.Client();
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
-client.user.setGame(`b!help /by luckygamer#0111`,"http://twitch.tv/S-F")
+client.user.setGame(`ARAB SERVER /by luckygamer#0111`,"http://twitch.tv/S-F")
   console.log('')
   console.log('')
   console.log('╔[═════════════════════════════════════════════════════════════════]╗')
@@ -55,7 +55,7 @@ client.user.setGame(`b!help /by luckygamer#0111`,"http://twitch.tv/S-F")
 
 
 
-const yourID = "535043938889891851"; 
+const yourID = "444559925427961875"; 
 const setupCMD = "-activterole"
 let initialMessage = ``;
 const roles = ["active"];
