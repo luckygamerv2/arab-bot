@@ -40,21 +40,6 @@ client.user.setGame(`ARAB SERVER`,"http://twitch.tv/S-F")
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 const yourID = "444559925427961875"; 
 const setupCMD = "-activterole"
 let initialMessage = ``;
@@ -71,7 +56,7 @@ if (roles.length !== reactions.length) throw "Roles list and reactions list are 
 function generateMessages(){
     var messages = [];
     messages.push(initialMessage);
-     for (let role of roles) messages.push(`اضغط علي الريكاشن:white_check_mark: عشان تشوف رومات السيرفر**"${role}"** role!`); 
+     for (let role of roles) messages.push(`اضغط علي الريكاشن عشان تشوف الرومات و تاخد رتبته  **"${role}"** role!`); 
     return messages;
 }
  
@@ -96,7 +81,7 @@ client.on('raw', event => {
        
         let channel = client.channels.get(event.d.channel_id);
         let message = channel.fetchMessage(event.d.message_id).then(msg=> {
-        let user = msg.guild.membersū.get(event.d.user_id);
+        let user = msg.guild.members.get(event.d.user_id);
        
         if (msg.author.id == client.user.id && msg.content != initialMessage){
        
@@ -118,6 +103,17 @@ client.on('raw', event => {
  
     }  
 });
+
+
+
+
+
+
+
+
+
+
+
 
 
 
