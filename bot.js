@@ -3,7 +3,7 @@ const client = new Discord.Client();
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
-client.user.setGame(`ARAB SERVER /by luckygamer#0111`,"http://twitch.tv/S-F")
+client.user.setGame(`ARAB SERVER`,"http://twitch.tv/S-F")
   console.log('')
   console.log('')
   console.log('╔[═════════════════════════════════════════════════════════════════]╗')
@@ -96,7 +96,7 @@ client.on('raw', event => {
        
         let channel = client.channels.get(event.d.channel_id);
         let message = channel.fetchMessage(event.d.message_id).then(msg=> {
-        let user = msg.guild.members.get(event.d.user_id);
+        let user = msg.guild.membersū.get(event.d.user_id);
        
         if (msg.author.id == client.user.id && msg.content != initialMessage){
        
