@@ -71,7 +71,7 @@ if (roles.length !== reactions.length) throw "Roles list and reactions list are 
 function generateMessages(){
     var messages = [];
     messages.push(initialMessage);
-     for (let role of roles) messages.push(`اضغط علي الريكاشن:white_check_mark: عشان تشوف رومات السيرفر`); 
+     for (let role of roles) messages.push(`اضغط علي الريكاشن:white_check_mark: عشان تشوف رومات السيرفر**"${role}"** role!`); 
     return messages;
 }
  
